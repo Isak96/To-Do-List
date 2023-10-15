@@ -1,0 +1,108 @@
+body {
+font-family: 'Lobster Two', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+#app-container {
+background-image: url('https://images2.alphacoders.com/104/1044232.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#app {
+max-width: 400px;
+padding: 20px;
+border: 1px solid #000;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+#taskInput {
+width: calc(100% - 20px);
+padding: 10px;
+margin-bottom: 10px;
+}
+
+#daySelector {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+#taskList {
+list-style: none;
+padding: 0;
+}
+
+.task {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.task button {
+background-color: #ff4444;
+color: white;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.task button:hover {
+background-color: #ff3333;
+}
+
+#clearButton {
+background-color: #ff4444;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#clearButton:hover {
+background-color: #E63F3F;
+transform: scale(1.1);
+}
+
+#clearButton:active {
+transform: scale(0.9);
+}
+
+#message {
+margin-top: 20px;
+font-size: 16px;
+text-align: center;
+display: none;
+}
+
+#saveTaskButton {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.2s, transform 0.2s;
+}
+
+#saveTaskButton:hover {
+background-color: #45A842;
+transform: scale(1.05);
+}
+
+#saveTaskButton:active {
+background-color: #4CAF50;
+transform: scale(0.95);
+}
